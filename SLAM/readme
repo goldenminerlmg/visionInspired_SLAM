@@ -1,0 +1,13 @@
+The project is a SLAM algorithm with uses paricle fiter as its state estimation technique. The sensor used in this project is an xtion pro live by ASUS and the mobile platform on which the algorithm was tested is Amigobot by Adept mobile robot.
+The code folder contains all the essentail codes and packages.The package name Slam research has all the main codes.
+
+
+Steps for starting the system in Linux termimal.
+
+
+1.roscore
+2.roslaunch openni_launch openni.launch
+3.rosrun openni_camera openni.node
+4.rosrun rosaria RosAria _port:=amigo%(number).rit.edu:8101 (this command is subject to change if the netwok is changed) 
+5.roslaunch descriptors/urdf/myrobot.launch urdf:=descriptors/urdf/pioneer3dx.urdf
+6. Run the script visioninspiredSLAM.py and see the results.	
